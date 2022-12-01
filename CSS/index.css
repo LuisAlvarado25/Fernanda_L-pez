@@ -10,8 +10,7 @@ html{
 h1{
   font-size: 3rem;
   text-align: center;
-  
-}
+  }
 p{
   font-size: 1.8rem;
   text-align: justify;
@@ -29,20 +28,26 @@ overflow: hidden;
 
 .header{
 background-size: cover;
-min-height: 600px;
-height: 100vh;
 color: white;
 }
 
+.logo-nav{
+ z-index: 1;
+  width: 250px;
+  height: 65px;
+  object-fit: fill;
+  
+}
+
 .navq{
-z-index: 10;
+z-index: 1;
 position: fixed;
 display: grid;
 grid-template-columns: repeat(2,max-content);
 justify-content: space-between;
 align-items: center;
-padding: 2rem 1rem;
-background-color:#aac539;
+padding: .5rem 2rem;
+background-color:#13a1a4;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 --state-close:scale(0);
 --state-hamburger:scale(1);
@@ -54,11 +59,11 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 --state-hamburger:scale(0);
 }
 .nav-logo{
-font-size: 2rem;
+font-size: 4rem;
 z-index: 1;
 }
 .nav-links{
-background-color: #aac539;
+background-color: #13a1a4;;
 position: fixed;
 top:0;
 height: 100vh;
@@ -80,6 +85,9 @@ list-style: none;
 }
 .nav-icon{
 width:3rem;
+}
+.mariposa{
+  width:6rem;
 }
 .nav-hamburger,.nav-close{
 cursor:pointer;
@@ -103,13 +111,16 @@ color:white;
 
 .Psicologa{
   display: flex;
-  align-items:center ;
+  align-items: center;
+  width:100%;
   height: 100vh;
-  background-color: white;
+ 
 }
 .Psicologa-picture{
    width:100%;
 }
+
+
 
 div[id]{
   scroll-margin-top: 70px;
@@ -131,7 +142,7 @@ div[id]{
 
  .Quienes-Somos-img img{
   border-radius: 20%;
-  border: 5px solid  #aac539;
+  border: 5px solid #13a1a4;;
  }
 
 .Quienes-Somos-agradecimiento{
@@ -150,15 +161,15 @@ div[id]{
  }
 .bloque{
   margin: 20px;
-  max-width:400px;
+  max-width:500px;
   
  }
 
 .Testimonios img{
   width:100%;
   border-radius: 20px;
-  border: 5px solid #aac539;
-  object-fit:cover;
+  border: 5px solid #13a1a4;;
+  object-fit:fill;
  }
 
 
@@ -205,12 +216,16 @@ div[id]{
     div[id]{
       scroll-margin-top: 80px;
     }
+    .Psicologa-picture{
+      width:100%;
+      padding-top: 50px;
+   }
     .Testimonios img{
       width:100%;
       height: 300px;
       border-radius: 20px;
-      border: 5px solid #aac539;
-      object-fit:cover;
+      border: 5px solid #13a1a4;;
+      object-fit:fill;
      }
   
   
